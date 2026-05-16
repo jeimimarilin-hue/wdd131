@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #1a5276;
+    --bg-card: #f4f4f4;
+    --text-color: #333;
+    --accent-color: #ffcc00;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 5px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #002244;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #000000;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    background-color: var(--bg-card);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--white);
+    border-top: 1px solid #eee;
+}
+
+footer {
+    border-top: 3px solid var(--primary-color);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    background-color: #eee;
+    margin-top: 40px;
+}

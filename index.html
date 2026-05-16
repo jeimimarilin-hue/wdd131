@@ -6,18 +6,15 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Jeimi Díaz Mariani</title>
     <meta name="description" content="WDD 131: Web Frontend Development - Jeimi Díaz Mariani.">
     <meta name="author" content="Jeimi Díaz Mariani">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Jeimi Díaz Mariani</h1>
-        <img src="images/profile.jpg" alt="Jeimi Díaz Mariani Profile Picture" class="profile-img">
         <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
             <ul class="navigation">
@@ -29,15 +26,43 @@
     </header>
 
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>I am a teacher with over five years of experience in the classroom. I truly enjoy helping others learn, and now I am challenging myself as a student again, exploring the world of software development to find new ways to help my community through technology.</p>
-        </section>
-        
-        <section class="card">
-            <h2>Location</h2>
-            <p>Cabimas, Zulia, Venezuela</p>
-        </section>
+        <div class="left-column">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content-profile">
+                    <p>I am a teacher with over five years of experience in the classroom. I truly enjoy helping others learn, and now I am challenging myself as a student again, exploring the world of software development to find new ways to help my community through technology.</p>
+                    <img src="images/profile.jpg" alt="Jeimi Díaz Mariani Profile Picture" class="profile-img">
+                </div>
+                <div class="location-sub-block">
+                    <h3>Cabimas, Zulia, Venezuela</h3>
+                    <div class="location-details">
+                        <img src="images/venezuelanbeach.jpg" alt="Venezuelan beach" class="flag-img">
+                        <p>Venezuela is a beautiful country located in the northern part of South America. It is famous for its stunning landscapes, including Angel Falls, the world's highest uninterrupted waterfall, its rich cultural heritage, and warm, welcoming people.</p>
+                    </div>
+                    <p class="climate-text">Furthermore, Venezuela boasts an incredible variety of climates and ecosystems, ranging from the humid, tropical rainforests of the Amazon basin to the pristine, sun-drenched beaches of the Caribbean coast. The country also features alpine conditions in the snow-capped peaks of the Andes Mountains, as well as vast, semi-arid plains and desert landscapes in the northwestern region, making it a remarkably diverse territory.</p>
+                </div>
+            </section>
+        </div>
+        </div>
+
+        <div class="right-column">
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul class="web-pages-list">
+                    <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                    <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Frontend Development</h2>
+                <p class="education-text">Frontend development focuses on creating user interfaces using HTML, CSS, and JavaScript. Responsive web design ensures that web applications look good and function properly across all modern screen layouts, operating systems, and device types.</p>
+            </section>
+        </div>
     </main>
 
     <footer>

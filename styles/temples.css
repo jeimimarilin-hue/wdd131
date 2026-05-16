@@ -102,11 +102,10 @@ figure {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* AQUÍ ESTÁ EL CAMBIO CLAVE PARA LOGRAR EL 95+ */
 figure img {
     width: 100%;
     height: auto;
-    aspect-ratio: 360 / 240; /* Reserva el espacio perfecto antes de cargar */
+    aspect-ratio: 1 / 1;
     display: block;
     object-fit: cover;
 }

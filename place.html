@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 Country Page - Venezuela</title>
+    <meta name="description" content="W03 Country Page for WDD131, detailing key data and weather metrics for Venezuela.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Venezuela</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source media="(min-width: 600px)" srcset="images/venezuelanbeach-large.webp">
+                <img src="images/venezuelanbeach-small.webp" alt="Beautiful Venezuelan Beach" loading="lazy">
+            </picture>
+            <div class="hero-title">
+                <h2>Explore the Caribbean Coast</h2>
+            </div>
+        </div>
+
+        <section class="card data-card">
+            <h3>General Information</h3>
+            <ul>
+                <li><strong>Capital:</strong> Caracas</li>
+                <li><strong>Population:</strong> 28 Million</li>
+                <li><strong>Official Language:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Bolívar</li>
+            </ul>
+        </section>
+
+        <section class="card weather-card">
+            <h3>Weather</h3>
+            <div class="weather-content">
+                <div class="weather-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#e0a96d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                </div>
+                
+                <div class="weather-data">
+                    <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+                    <p><strong>Condition:</strong> Sunny</p>
+                    <p><strong>Wind Speed:</strong> <span id="wind">12</span> km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="chill">N/A</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Jeimi | Venezuela</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+        <span class="desktop-emoticon"></span>
+    </footer>
+</body>
+</html>

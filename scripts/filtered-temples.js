@@ -53,7 +53,7 @@ const temples = [
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 382207,
-    imageUrl: "images/salt-lake.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple5.jpg"
   },
   {
     templeName: "Rome Italy",
@@ -91,15 +91,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayTemples(filteredList, filterName) {
         if (!container) return;
-        
         container.innerHTML = ""; 
+        
         if (titleElement) {
             titleElement.textContent = filterName === "Home" ? "Home" : `${filterName} Temples`;
         }
 
         filteredList.forEach(temple => {
             const card = document.createElement("figure");
-            
             card.innerHTML = `
                 <h3>${temple.templeName}</h3>
                 <div class="card-info">

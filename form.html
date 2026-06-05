@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="W05 Product Review Form assignment for WDD 131.">
+    <meta name="author" content="Jeimi Díaz Mariani">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <section class="form-container">
+            <form method="get" action="review.html">
+                <p>
+                    <label for="product-select">Product Name <span class="required-indicator">*</span></label>
+                    <select id="product-select" name="productName" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </p>
+
+                <fieldset>
+                    <legend>Overall Rating <span class="required-indicator">*</span></legend>
+                    <label><input type="radio" name="rating" value="1" required>1 星</label>
+                    <label><input type="radio" name="rating" value="2" required>2 星</label>
+                    <label><input type="radio" name="rating" value="3" required>3 星</label>
+                    <label><input type="radio" name="rating" value="4" required>4 星</label>
+                    <label><input type="radio" name="rating" value="5" required>5 星</label>
+                </fieldset>
+
+                <p>
+                    <label for="review-date">Date of Installation <span class="required-indicator">*</span></label>
+                    <input type="date" id="review-date" name="installationDate" required>
+                </p>
+
+                <fieldset>
+                    <legend>Features Noted (Select all that apply)</legend>
+                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                    <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                </fieldset>
+
+                <p>
+                    <label for="user-name">Written By (Optional)</label>
+                    <input type="text" id="user-name" name="reviewerName">
+                </p>
+
+                <p>
+                    <label for="comments">Review Comments (Optional)</label>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Share your experience with the product..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Review</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 | Product Review Platform | WDD 131</p>
+    </footer>
+</body>
+</html>

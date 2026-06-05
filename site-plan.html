@@ -113,18 +113,18 @@
                 <p>
                     <label for="product-select">Select Product: </label>
                     <select id="product-select" name="product" required>
-                        <option value="" disabled selected>Choose a fermentation starter...</option>
+                        <option value="" disabled selected>Select a Product ...</option>
                         <option value="kefir">Milk Kefir Grains</option>
                         <option value="yogurt">Yogurt Starter Culture</option>
                     </select>
                 </p>
 
                 <p>Product Rating:</p>
-                <label><input type="radio" name="rating" value="1" required> 1</label>
-                <label><input type="radio" name="rating" value="2"> 2</label>
-                <label><input type="radio" name="rating" value="3"> 3</label>
-                <label><input type="radio" name="rating" value="4"> 4</label>
-                <label><input type="radio" name="rating" value="5"> 5</label>
+                <label for="rating-1"><input type="radio" id="rating-1" name="rating" value="1" required> 1</label>
+                <label for="rating-2"><input type="radio" id="rating-2" name="rating" value="2" required> 2</label>
+                <label_ for="rating-3"><input type="radio" id="rating-3" name="rating" value="3" required> 3</label_>
+                <label for="rating-4"><input type="radio" id="rating-4" name="rating" value="4" required> 4</label>
+                <label for="rating-5"><input type="radio" id="rating-5" name="rating" value="5" required> 5</label>
 
                 <p>
                     <label for="review-date">Date of Production: </label>
@@ -132,10 +132,10 @@
                 </p>
 
                 <p>Features Noted (Select at least 4):</p>
-                <label><input type="checkbox" name="features" value="taste"> Good Taste</label><br>
-                <label><input type="checkbox" name="features" value="aroma"> Correct Aroma</label><br>
-                <label><input type="checkbox" name="features" value="texture"> Thick Texture</label><br>
-                <label><input type="checkbox" name="features" value="speed"> Fast Fermentation</label>
+                <label for="feature-taste"><input type="checkbox" id="feature-taste" name="features" value="taste"> Good Taste</label><br>
+                <label_ for="feature-aroma"><input type="checkbox" id="feature-aroma" name="features" value="aroma"> Correct Aroma</label_><br>
+                <label for="feature-texture"><input type="checkbox" id="feature-texture" name="features" value="texture"> Thick Texture</label><br>
+                <label for="feature-speed"><input type="checkbox" id="feature-speed" name="features" value="speed"> Fast Fermentation</label>
 
                 <p>
                     <label for="comments">Review Comments: </label><br>

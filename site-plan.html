@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fermentation Project Site Plan and Product Review</title>
-    <meta name="description" content="An educational site plan and product review platform dedicated to homemade fermentation, milk kefir, and yogurt culture practices.">
+    <title>Fermentation Project Site Plan</title>
+    <meta name="description" content="An educational site plan dedicated to homemade fermentation, milk kefir, and yogurt culture practices.">
     <meta name="author" content="Jeimi Díaz Mariani">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/site-plan.css">
-    <script src="scripts/review.js" defer></script>
 </head>
 <body>
     <header>
@@ -106,60 +105,9 @@
                 </div>
             </div>
         </section>
-
-        <section id="review-form-section">
-            <h2>📝 Product Review Form</h2>
-            <form method="get" action="review.html">
-                <p>
-                    <label for="product-select">Select Product: </label>
-                    <select id="product-select" name="product" required>
-                        <option value="" disabled selected>Select a Product ...</option>
-                        <option value="kefir">Milk Kefir Grains</option>
-                        <option value="yogurt">Yogurt Starter Culture</option>
-                    </select>
-                </p>
-
-                <p>Product Rating:</p>
-                <p>
-                    <label for="rating-1"><input type="radio" id="rating-1" name="rating" value="1" required> 1</label>
-                    <label for="rating-2"><input type="radio" id="rating-2" name="rating" value="2" required> 2</label>
-                    <label for="rating-3"><input type="radio" id="rating-3" name="rating" value="3" required> 3</label>
-                    <label for="rating-4"><input type="radio" id="rating-4" name="rating" value="4" required> 4</label>
-                    <label for="rating-5"><input type="radio" id="rating-5" name="rating" value="5" required> 5</label>
-                </p>
-
-                <p>
-                    <label for="review-date">Date of Production: </label>
-                    <input type="date" id="review-date" name="date" required>
-                </p>
-
-                <p>Features Noted (Select at least 4):</p>
-                <p>
-                    <label for="feature-taste"><input type="checkbox" id="feature-taste" name="features" value="taste"> Good Taste</label>
-                </p>
-                <p>
-                    <label for="feature-aroma"><input type="checkbox" id="feature-aroma" name="features" value="aroma"> Correct Aroma</label>
-                </p>
-                <p>
-                    <label for="feature-texture"><input type="checkbox" id="feature-texture" name="features" value="texture"> Thick Texture</label>
-                </p>
-                <p>
-                    <label for="feature-speed"><input type="checkbox" id="feature-speed" name="features" value="speed"> Fast Fermentation</label>
-                </p>
-
-                <p>
-                    <label for="comments">Review Comments: </label><br>
-                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Share your fermentation experience..."></textarea>
-                </p>
-
-                <p>
-                    <button type="submit">Submit Review</button>
-                </p>
-            </form>
-        </section>
     </main>
     <footer>
-        <p>&copy; 2026 FermentLab Site Plan | WDD 131 🥣</p>
+        <p>&copy; 2026 FermentLab Site Plan by Jeimi | WDD 131 🥣</p>
     </footer>
 </body>
 </html>

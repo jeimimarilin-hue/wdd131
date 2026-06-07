@@ -3,68 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
-    <meta name="description" content="W05 Product Review Form assignment for WDD 131.">
-    <meta name="author" content="Jeimi Díaz Mariani">
+    <title>Product Review Form | WDD 131</title>
+    <meta name="description" content="Complete the W05 Product Review Form assignment for WDD 131. Provide your feedback on products and help us improve our services with your valuable insights.">
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Product Review Form</h1>
+        <h1>Product Review</h1>
     </header>
-
     <main>
-        <section class="form-container">
-            <form method="get" action="review.html">
-                <p>
-                    <label for="product-select">Product Name <span class="required-indicator">*</span></label>
-                    <select id="product-select" name="productName" required>
-                        <option value="" disabled selected>Select a Product ...</option>
-                    </select>
-                </p>
+        <div class="form-container">
+            <form action="review.html" method="get">
+                <label for="product-select">Product Name <span class="required-indicator">*</span></label>
+                <select id="product-select" name="product" required>
+                    <option value="" disabled selected>Select a product...</option>
+                </select>
 
                 <fieldset>
-                    <legend>Overall Rating <span class="required-indicator">*</span></legend>
-                    <label><input type="radio" name="rating" value="1" required>1 Star</label>
-                    <label><input type="radio" name="rating" value="2" required>2 Stars</label>
-                    <label><input type="radio" name="rating" value="3" required>3 Stars</label>
-                    <label><input type="radio" name="rating" value="4" required>4 Stars</label>
-                    <label><input type="radio" name="rating" value="5" required>5 Stars</label>
+                    <legend>Rating</legend>
+                    <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required> 1 Star</label>
+                    <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> 2 Stars</label>
+                    <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> 3 Stars</label>
+                    <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> 4 Stars</label>
+                    <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> 5 Stars</label>
                 </fieldset>
-
-                <p>
-                    <label for="review-date">Date of Installation <span class="required-indicator">*</span></label>
-                    <input type="date" id="review-date" name="installationDate" required>
-                </p>
 
                 <fieldset>
-                    <legend>Features Noted (Select all that apply)</legend>
-                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                    <legend>Features</legend>
+                    <label for="feat1"><input type="checkbox" id="feat1" name="features" value="durability"> Durability</label>
+                    <label for="feat2"><input type="checkbox" id="feat2" name="features" value="ease"> Ease of Use</label>
+                    <label for="feat3"><input type="checkbox" id="feat3" name="features" value="price"> Price</label>
+                    <label for="feat4"><input type="checkbox" id="feat4" name="features" value="quality"> Quality</label>
                 </fieldset>
 
-                <p>
-                    <label for="user-name">Written By (Optional)</label>
-                    <input type="text" id="user-name" name="reviewerName">
-                </p>
-
-                <p>
-                    <label for="comments">Review Comments (Optional)</label>
-                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Share your experience with the product..."></textarea>
-                </p>
-
-                <p>
-                    <button type="submit">Submit Review</button>
-                </p>
+                <button type="submit">Post Review</button>
             </form>
-        </section>
+        </div>
     </main>
-
     <footer>
-        <p>&copy; 2026 | Product Review Platform | WDD 131</p>
+        <p>© 2026 WDD 131 | Product Review Assignment</p>
     </footer>
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>

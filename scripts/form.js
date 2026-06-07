@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const productSelect = document.getElementById("product-select");
 
     if (productSelect) {
-        products.forEach(product => {
-            const option = document.createElement("option");
-            option.value = product.id;
-            option.textContent = product.name.toUpperCase();
-            productSelect.appendChild(option);
-        });
+        const optionsHtml = products.map(product => 
+            `<option value="${product.id}">${product.name.toUpperCase()}</option>`
+        ).join("");
+
+        productSelect.innerHTML += optionsHtml;
     }
 });

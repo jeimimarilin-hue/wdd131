@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FermentLab | Culture & Craft 🧪</title>
+    <link rel="stylesheet" href="styles/fermentlab.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FermentLab 🥛</div>
+            <ul class="nav-links">
+                <li><a href="fermentlab.html">Home</a></li>
+                <li><a href="#">Kefir Guide</a></li>
+                <li><a href="#">Yogurt Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-split">
+            <div class="hero-text">
+                <h1>Welcome to FermentLab 🔬</h1>
+                <button id="startBtn">Get Started 🚀</button>
+            </div>
+            <div class="hero-image">
+                <figure>
+                    <img src="images/kefirandyogurt.jpg" alt="Kefir and Yogurt" loading="lazy">
+                    <p>Kefir and Yogurt</p>
+                </figure>
+            </div>
+        </section>
+
+        <section id="ferment-cards">
+            <h2>Fermentation Resources</h2>
+        </section>
+
+        <section id="review-section">
+            <h2>📝 Product Review Form</h2>
+            <form id="fermentForm">
+                <label for="productSelect">Select Product:</label>
+                <select id="productSelect" required>
+                    <option value="" disabled selected>Select a product...</option>
+                    <option value="kefir">Kefir 🥛</option>
+                    <option value="yogurt">Yogurt 🥄</option>
+                </select>
+                <button type="submit">Save Favorite ✨</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 FermentLab | Built with passion by Jeimi 🧪</p>
+    </footer>
+
+    <script src="scripts/fermentlab.js"></script>
+</body>
+</html>

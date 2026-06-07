@@ -8,7 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const productSelect = document.getElementById("product-select");
-    
+
+    const placeholder = document.createElement("option");
+    placeholder.value = "";
+    placeholder.disabled = true;
+    placeholder.selected = true;
+    placeholder.textContent = "Select a product...";
+    productSelect.appendChild(placeholder);
+
     products.forEach(product => {
         const option = document.createElement("option");
         option.value = product.id;

@@ -1,44 +1,11 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #D0DCE5;
-    color: #0F2C59;
-    margin: 0;
-}
+body { font-family: 'Open Sans', sans-serif; background-color: #D0DCE5; color: #0F2C59; margin: 0; }
 
-header {
-    background-color: #0F2C59;
-    color: #FFFFFF;
-    padding: 1rem;
-}
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: #0F2C59; color: white; }
+.nav-links { display: flex; list-style-type: none; gap: 20px; }
+.nav-links li a { text-decoration: none; color: white; font-weight: bold; }
 
-.nav-links {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-}
+.hero-split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 2rem; background-color: #eef2f5; min-height: 300px; }
+.hero-image figure { margin: 0; }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: #00A8CC;
-}
-
-#ferment-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.ferment-card {
-    background: #FFFFFF;
-    padding: 20px;
-    border-radius: 8px;
-    border-top: 5px solid #00A8CC;
-}
+#ferment-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 2rem; min-height: 400px; }
+.ferment-card { background: #FFFFFF; padding: 20px; border-radius: 8px; border-top: 5px solid #00A8CC; }

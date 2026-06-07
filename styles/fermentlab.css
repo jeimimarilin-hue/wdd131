@@ -77,3 +77,19 @@ nav {
     border-radius: 8px;
     border-top: 5px solid
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .hero-split, 
+    #ferment-cards {
+        grid-template-columns: 1fr; 
+    }
+}

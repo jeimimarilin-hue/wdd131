@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     const products = [
       { id: "fc-1020", name: "flux capacitor", averagerating: 4.5 },
       { id: "bc-1998", name: "power converters", averagerating: 3.9 },
@@ -9,12 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const productSelect = document.getElementById("product-select");
     
-    if (productSelect) {
-        products.forEach(product => {
-            const option = document.createElement("option");
-            option.value = product.id;
-            option.textContent = product.name.toUpperCase();
-            productSelect.appendChild(option);
-        });
-    }
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.id;
+        option.textContent = product.name.toUpperCase();
+        productSelect.appendChild(option);
+    });
 });

@@ -1,14 +1,18 @@
 :root {
     --primary-color: #0F2C59;
     --accent-color: #00A8CC;
-    --bg-color: #D0DCE5;
+    --bg-color: #F7FAFC;
     --card-bg: #FFFFFF;
-    --text-color: #2C3E50;
+    --text-color: #1A202C;
     --border-color: #CBD5E0;
     --error-color: #E53E3E;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -20,10 +24,24 @@ body {
     min-height: 100vh;
 }
 
-header { background-color: var(--primary-color); color: #FFFFFF; text-align: center; padding: 2rem 1rem; }
-header h1 { font-family: Helvetica, Arial, sans-serif; font-size: 1.8rem; }
+header {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem 1rem;
+}
 
-main { flex: 1; padding: 2rem 1rem; display: flex; justify-content: center; }
+header h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
 
 .form-container {
     background-color: var(--card-bg);
@@ -34,10 +52,22 @@ main { flex: 1; padding: 2rem 1rem; display: flex; justify-content: center; }
     box-shadow: 0 4px 10px rgba(15, 44, 89, 0.1);
 }
 
-label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--primary-color); }
-.required-indicator { color: var(--error-color); margin-left: 2px; }
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
 
-input[type="text"], input[type="date"], select, textarea {
+.required-indicator {
+    color: var(--error-color);
+    margin-left: 2px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--border-color);
@@ -47,10 +77,33 @@ input[type="text"], input[type="date"], select, textarea {
     font-size: 1rem;
 }
 
-fieldset { border: 1px solid var(--border-color); border-radius: 6px; padding: 1rem; margin-bottom: 1.5rem; }
-legend { font-weight: 700; color: var(--primary-color); padding: 0 10px; }
-fieldset label { display: flex; align-items: center; font-weight: normal; margin-bottom: 0.5rem; cursor: pointer; }
-fieldset input { margin-right: 10px; width: 18px; height: 18px; cursor: pointer; }
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+fieldset input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
 
 button[type="submit"] {
     background-color: var(--primary-color);
@@ -63,11 +116,25 @@ button[type="submit"] {
     width: 100%;
     transition: background-color 0.3s ease;
 }
-button[type="submit"]:hover { background-color: var(--accent-color); }
 
-footer { text-align: center; padding: 20px; color: var(--primary-color); font-size: 0.9rem; margin-top: auto; }
+button[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-top: auto;
+}
 
 @media (min-width: 768px) {
-    main { padding: 3rem 2rem; }
-    fieldset label { display: inline-flex; margin-right: 20px; }
+    main {
+        padding: 3rem 2rem;
+    }
+    fieldset label {
+        display: inline-flex;
+        margin-right: 20px;
+    }
 }

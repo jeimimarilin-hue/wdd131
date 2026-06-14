@@ -75,7 +75,15 @@ nav {
     background: var(--white);
     padding: 20px;
     border-radius: 8px;
-    border-top: 5px solid
+    border-top: 5px solid var(--accent-color);
+}
+
+.content-box {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) {
